@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+        targetNamespace="http://xmlns.oracle.com/CardValidationSystem/CardValidationSystem/CVS_BPELProcess1"
+        xmlns="http://www.w3.org/2001/XMLSchema">
+  <element name="CardReq">
+    <complexType>
+      <sequence>
+        <element name="CCNumber" type="integer"/>
+        <element name="CCVendor" type="string"/>
+      </sequence>
+    </complexType>
+  </element>
+  <element name="CardResp">
+    <complexType>
+      <sequence>
+        <element name="CCNumber" type="integer"/>
+        <element name="CCVendor" type="string"/>
+        <element name="CCStatus" type="string"/>
+      </sequence>
+    </complexType>
+  </element>
+</schema>
